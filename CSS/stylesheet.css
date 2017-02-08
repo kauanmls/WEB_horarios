@@ -1,15 +1,9 @@
 h1 {
   color: blue;
 }
-div:first-child {
+#a {
    background-color: #009900;
 }
-div:nth-child(2) {
-  height: 30px;
-	width: 190px;
-  background-color: white;
-  margin-top: 10px;
-   margin: auto;
-   color: #999999;
-   text-align: left;
+#b) {
+ background-color: #009900;
 }
