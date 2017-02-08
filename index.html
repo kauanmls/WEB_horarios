@@ -14,7 +14,7 @@ layoult: defaut
       </tr>
         {% for linha in turma.linhas%}
             <tr>
-            <td>{{linhas.horario}}</td>
+            <td>{{linha.horario}}</td>
             {% for aula in linha.aulas %}
                 <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
             {% endfor %}
