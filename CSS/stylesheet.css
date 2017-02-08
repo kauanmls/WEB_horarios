@@ -1,9 +1,9 @@
 h1 {
   color: #CCFFFF;
 }
-div:nth-child(1) {
+#ab {
    background-color: #009900;
 }
-div:nth-child(2) {
+#cd {
  background-color: #CCFFFF;
 }
