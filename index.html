@@ -8,9 +8,10 @@ layoult: defaut
     <h3>{{turma.nome}}</h3>
     <table style="width:100%">
       <tr>
-        {% for coluna in turmas.colunas %}
-        <th>{{coluna.colunas}}</th>
+        <th>{% for coluna in turmas.colunas %}
+          {{coluna.colunas}}
         {% endfor %}
+        </th>
       </tr>
      </table>
   {% endfor %}
