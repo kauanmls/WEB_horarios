@@ -12,6 +12,11 @@ layoult: defaut
           <th>{{coluna}}</th>
         {% endfor %}
       </tr>
+      <tr>
+        {% for linhah in linhas.horario %}
+          <td>{{linhah}}</td>
+        {% endfor %}
+      </tr>
       <tr></tr>
      </table>
   {% endfor %}
