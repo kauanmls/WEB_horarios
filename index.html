@@ -12,12 +12,14 @@ layoult: defaut
           <th>{{coluna}}</th>
         {% endfor %}
       </tr>
-      <tr>
-        {% for linhah in linhas.horario %}
-          <td>{{linhah}}</td>
-        {% endfor %}
-      </tr>
-      <tr></tr>
+        {% for linha in turma.linhas%}
+            <tr>
+            <td>{{linhas.horario}}</td>
+            {% for aula in linha.aulas %}
+                <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor%}
      </table>
   {% endfor %}
 {% endfor %}
