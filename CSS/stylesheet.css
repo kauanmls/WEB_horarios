@@ -4,9 +4,11 @@ h1 {
 }
 .hora {
   color: black;
+  background-color: #009900;
 }
 .aula {
   color: black;
+  background-color: #c4ffc4;
 }
 
 body {
