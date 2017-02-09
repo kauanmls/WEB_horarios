@@ -16,9 +16,9 @@ layout: default
       </tr>
         {% for linha in turma.linhas%}
             <tr>
-            <div id="ab"><td>{{linha.horario}}</td></div>
+            <div class="hora"><td>{{linha.horario}}</td></div>
             {% for aula in linha.aulas %}
-                <div id="cd"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
+                <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
             {% endfor %}
         </tr>
         {% endfor%}
