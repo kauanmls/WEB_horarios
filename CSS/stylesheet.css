@@ -3,10 +3,12 @@ h1 {
   color: green;
 }
 .hora {
-  background: #CCFFFF;
+  color: black;
+  background: #009900;
 }
 .aula {
-  background: #009900;
+  color: black;
+  background: #CCFFFF;
 }
 
 body {
