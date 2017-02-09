@@ -5,9 +5,9 @@ layout: default
 <h1 align="center">HORÁRIOS</h1>
 
 {% for curso in site.data.horarios.cursos %}
-  <h1>{{curso.nome}}</h1>
+  <h1 align="center">{{curso.nome}}</h1>
   {% for turma in curso.turmas %}
-    <h3 align="center">{{turma.nome}}</h3>
+    <h3>{{turma.nome}}</h3>
     <table style="width:100%">
       <tr>
         {% for coluna in turma.colunas %}
