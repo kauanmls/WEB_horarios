@@ -8,7 +8,7 @@ layout: default
   <h1 align="center">{{curso.nome}}</h1>
   {% for turma in curso.turmas %}
     <h2>{{turma.nome}}</h2>
-    <table style="width:100%">
+    <table class="table"; style="width:100%">
       <tr>
         {% for coluna in turma.colunas %}
           <th>{{coluna}}</th>
