@@ -11,9 +11,9 @@ layout: default
   <h1 align="center">{{curso.nome}}</h1>
   {% for turma in curso.turmas %}
     <h2>{{turma.nome}}</h2>
-    <table class="table-kauan"; class="w3-table-all">
+    <table class="table-kauan"; class="w3-striped">
       <thead>
-      <tr class="w3-striped">
+      <tr class="w3-green">
         {% for coluna in turma.colunas %}
           <th>{{coluna}}</th>
         {% endfor %}
