@@ -17,6 +17,7 @@ h1 {
   border: 2px;
   border-radius: 10px;
   width: 100%;
+  border-style: groove;
 }
 
 body {
