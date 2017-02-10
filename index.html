@@ -2,13 +2,16 @@
 layout: default
 ---
 <link type= "text/css" rel= "stylesheet" href= "CSS/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
 <div background= "fundo-verde-claro (1).png"><h1 align="center">HORÁRIOS IFPB - Campus Guarabira</h1></div>
 
+<div class="w3-container">
 {% for curso in site.data.horarios.cursos %}
   <h1 align="center">{{curso.nome}}</h1>
   {% for turma in curso.turmas %}
     <h2>{{turma.nome}}</h2>
-    <table class="table-kauan">
+    <table class="table-kauan"; class="w3-table w3-striped">
       <tr>
         {% for coluna in turma.colunas %}
           <th>{{coluna}}</th>
@@ -25,3 +28,4 @@ layout: default
      </table>
   {% endfor %}
 {% endfor %}
+</div>
