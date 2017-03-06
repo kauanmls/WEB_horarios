@@ -1,52 +1,28 @@
----
-layout: default
----
 <link type= "text/css" rel= "stylesheet" href= "CSS/stylesheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="CSS/w3.css">
-<script src="js/javascript.js"></script>
-
-<div style="background-image:url(verde.png);height: 200px; width:100%;text-align:center;vertical-align:middle;"><h1 style="color:white">HORÁRIOS IFPB - Campus Guarabira</h1></div>
-
-
-
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Professores</button>
-  <div id="myDropdown" class="dropdown-content">
-    <p>Link 1</p>
-    <p>Link 2</p>
-    <p>Link 3</p>
-  </div>
-</div>
-
-
-  <div class="sucesso" id="{{professort}}" style="display: none">
-	<div class="w3-container">
-{% for curso in site.data.horarios.cursos %}
-  <h1 align="center">{{curso.nome}}</h1>
-  {% for turma in curso.turmas %}
-    <h2>{{turma.nome}}</h2>
-    <table class="w3-table w3-striped w3-table-all">
-      <thead>
-      <tr class="w3-green">
-        {% for coluna in turma.colunas %}
-          <th>{{coluna}}</th>
-        {% endfor %}
-       </tr>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/w3.css">
+ -<div style="background-image:url(verde.png);height: 200px; width:100%;text-align:center;text-valign:middle;"><h1 style="color:white">HORÁRIOS IFPB - Campus Guarabira</h1></div>
+ +<div style="background-image:url(verde.png);height: 200px; width:100%;text-align:center;vertical-align:middle;"><h1 style="color:white">HORÁRIOS IFPB - Campus Guarabira</h1></div>
+  
+  <div class="w3-container">
+  {% for curso in site.data.horarios.cursos %}
+   <h1 align="center">{{curso.nome}}</h1>
+   {% for turma in curso.turmas %}
+     <h2>{{turma.nome}}</h2>
+     <table class="w3-table w3-striped w3-table-all">
        <thead>
-        {% for linha in turma.linhas%}
-            <tr>
-            <div class="hora"><td>{{linha.horario}}</td></div>
-            {% for aula in linha.aulas %}
-                  <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
-                 
-            {% endfor %}
+       <tr class="w3-green">
+         {% for coluna in turma.colunas %}
+           <th>{{coluna}}</th>
+         {% endfor %}
         </tr>
-        {% endfor%}
-     </table>
-  {% endfor %}
-	      </div>
-	      {% endfor %}
-</div>
-
+        <thead>
+         {% for linha in turma.linhas%}
+             <tr>
+             <div class="hora"><td>{{linha.horario}}</td></div>
+             {% for aula in linha.aulas %}
+                 <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
+             {% endfor %}
+         </tr>
+         {% endfor%}
+      </table>
