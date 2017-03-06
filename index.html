@@ -12,7 +12,7 @@ layout: default
 
 
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <button onclick="myFunction()" class="dropbtn">Professores</button>
   <div id="myDropdown" class="dropdown-content">
     <p>Link 1</p>
     <p>Link 2</p>
@@ -42,7 +42,7 @@ layout: default
                 {% if aula.professor == professort or professort == "Todos" %}
                   <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
                   {%else %}
-									  <div class="aula"><td><br></td></div>
+			 <div class="aula"><td><br></td></div>
                  {% endif  %}
             {% endfor %}
         </tr>
