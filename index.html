@@ -22,7 +22,7 @@ layout: default
 
 {% for professort in site.data.kaumkadois.professores %}
   <div class="sucesso" id="{{professort}}" style="display: none">
-<div class="w3-container">
+	<div class="w3-container">
 {% for curso in site.data.horarios.cursos %}
   <h1 align="center">{{curso.nome}}</h1>
   {% for turma in curso.turmas %}
@@ -52,3 +52,4 @@ layout: default
 	      </div>
 	      {% endfor %}
 </div>
+	{% endfor %}
