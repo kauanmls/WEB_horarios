@@ -20,6 +20,8 @@ layout: default
   </div>
 </div>
 
+{% for professort in site.data.kaumkadois.professores %}
+  <div class="sucesso" id="{{professort}" style="display: none">
 <div class="w3-container">
 {% for curso in site.data.horarios.cursos %}
   <h1 align="center">{{curso.nome}}</h1>
@@ -37,7 +39,11 @@ layout: default
             <tr>
             <div class="hora"><td>{{linha.horario}}</td></div>
             {% for aula in linha.aulas %}
-                <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
+                {% if aula.professor == professort or professort == "Todos" %}
+                  <div class="aula"><td>{{aula.disciplina}}<br>{{aula.professor}}</td></div>
+                  {%else %}
+									  <div class="aula"><td><br></td></div>
+                 {% endif  %}
             {% endfor %}
         </tr>
         {% endfor%}
