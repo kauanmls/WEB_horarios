@@ -1,8 +1,5 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
@@ -17,4 +14,31 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+function Turma() {
+    document.getElementById('turmas').style.display = "block";
+    document.getElementById('professores').style.display = "none";
+}
+function Professor() {
+    document.getElementById('professores').style.display = "block";
+    document.getElementById('turmas').style.display = "none";
+}
+function myFunction(n) {
+  document.getElementById(n).style.display = "block"
+}
+
+function filterFunction(n,m) {
+    var input, filter, a, i;
+    input = document.getElementById(n);
+    filter = input.value.toUpperCase();
+    div = document.getElementById(m);
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+          } else {
+              a[i].style.display = "none";
+          }
+     }
 }
