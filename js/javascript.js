@@ -44,4 +44,5 @@ window.onclick = function(event) {
                 a[i].style.display = "none";
             }
        }
+      document.getElementById(m).style.display = "none";
   }
