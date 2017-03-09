@@ -2,13 +2,13 @@
 h1 {
   color: green;
 }
-.hora {
+.hora, .head_table {
   color: white;
-  background-color: #009900;
+  background-color: #17b71e;
 }
 .aula {
   color: black;
-  background-color: #c4ffc4;
+  background-color: #dff7df;
 }
 
 .table-kauan{
