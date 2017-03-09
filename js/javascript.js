@@ -24,7 +24,11 @@ window.onclick = function(event) {
       document.getElementById('turmas').style.display = "none";
   }
   function myFunction(n) {
-    document.getElementById(n).style.display = "block"
+    if(document.getElementById(n).style.display == "block"){
+      document.getElementById(n).style.display = "none";
+    }else{
+      document.getElementById(n).style.display = "block"
+    }
   }
 
   function filterFunction(n,m) {
