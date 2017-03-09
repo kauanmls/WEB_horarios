@@ -27,7 +27,7 @@ window.onclick = function(event) {
     if(document.getElementById(n).style.display == "block"){
       document.getElementById(n).style.display = "none";
     }else{
-      document.getElementById(n).style.display = "block"
+      document.getElementById(n).style.display = "block";
     }
   }
 
