@@ -12,7 +12,7 @@ layout: default
   <div class="dropdown">
     <button onclick="myFunction('myDropdownTurma')" class="dropbtn">Pesquisa</button>
     <div id="myDropdownTurma" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInputTurma" onkeyup="filterFunction('myInputTurma','myDropdownTurma')">
+        <input type="text" placeholder="Search.." id="myInputTurma" onkeyup="filterFunction('myInputTurma','myDropdownTurma')"onclick="myFunction('myDropdownTurma')">
         {% for turma in site.data.turma.turmas %}
             <a href="#{{turma}}">{{turma}}</a>
         {% endfor %}
