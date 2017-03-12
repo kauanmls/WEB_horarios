@@ -32,7 +32,7 @@ layout: default
                     <tr>
                       <td class="hora">{{linha.horario}}</td>
                       {% for aula in linha.aulas %}
-                            {% if aula.displicina == "INTERVALO" or aula.displicina == "ALMOÇO" or aula.displicina == "JANTAR"%}
+                            {% if aula.disciplina == "INTERVALO" or aula.disciplina == "ALMOÇO" or aula.disciplina == "JANTAR"%}
                                 <td colspan="5" class="aula">{{aula.disciplina}}<br>{{aula.professor}}</td>
                                 {% break %}
                             {% else %}
@@ -70,7 +70,7 @@ layout: default
               <tr>
                 <td class="hora">{{linha.horario}}</td>
                 {% for aula in linha.aulas %}
-                      {% if aula.displicina == "INTERVALO" or aula.displicina == "ALMOÇO" or aula.displicina == "JANTAR"%}
+                      {% if aula.disciplina == "INTERVALO" or aula.disciplina == "ALMOÇO" or aula.disciplina == "JANTAR"%}
                           <td colspan="5" class="aula">{{aula.disciplina}}<br>{{aula.turma}}</td>
                           {% break %}
                       {% else %}
